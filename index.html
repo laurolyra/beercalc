@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beerCalc</title>
+  </head>
+  <body>
+    <h1 id="app-title">Bem vindo ao beer calc!</h1>
+    <section id="instructions">
+      <ol>
+        <h2>Como usar:</h2>
+        <li>Informe o volume do vasilhame</li>
+        <li>Digite o preço</li>
+        <li>Clique em "calcular"</li>
+      </ol>
+    </section>
+    <form id="beer-form" action="buttonClick()">
+      <div class="beer-form-container">
+        <div class="beer-form-field">
+          <h3>beer field 1</h3>
+          <label for="beer1">Quantidade (ml):</label>
+          <input type="text" id="beer1" name="beer1">
+          <label for="price1">Preço (R$):</label>
+          <input type="text" id="price1" name="price1"><br><br>
+        </div>
+        <div class="beer-form-field">
+          <h3>beer field 2</h3>
+          <label for="beer2">Quantidade (ml):</label>
+          <input type="text" id="beer2" name="beer2">
+          <label for="price2">Preço (R$):</label>
+          <input type="text" id="price2" name="price2"><br><br>
+        </div>
+      </div>
+      <input type="submit" value="Calcular">
+    </form>
+    <section id="results">
+      <p>results</p>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
